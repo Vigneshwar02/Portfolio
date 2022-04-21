@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fredoka+One&family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fredoka+One&family=Inter&family=Roboto&family=Volkhov&display=swap');
 
 *{
   padding: 0;
@@ -10,10 +8,7 @@
   text-decoration: none;
 }
 
-html{
-  min-height: 100%;
-  position: relative;
-}
+
 
 a:visited{
   color: inherit;
@@ -26,16 +21,22 @@ a:visited{
 }
 body{
  background-color: rgb(220, 215, 215);
+
 }
 
 h1,li{
-   font-family: 'Fredoka One', sans-serif;
+   font-family: 'Inter', sans-serif;
 }
 
 p{
-  font-family: 'Volkhov', sans-serif;
+  font-family: "Roboto";
+  font-size: 1.3rem;
 }
 
+
+nav{
+  height: 100%;
+}
 
 
 .nav-container{
@@ -64,8 +65,9 @@ p{
 }
 
 .flex-container{
-    position: relative;
-    top: 85px;
+    
+    margin-top: 185px;
+  
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -75,16 +77,30 @@ p{
   
   width: 80%;
   margin: 0 auto;
-  margin-top: 15px
+  margin-top: 15px;
+  margin-bottom: 80px;
 }
 
 .flex-heading{
   font-size: 3rem;
 }
 
+.flex-p{
+  padding: 2.5% 5%;
+  color: #515359;
+}
+
+.skill-list{
+  line-height: 30px;
+  margin-left: 5%;
+  margin-top:  10px;
+  font-size: 1.3rem;
+  font-family: "Roboto";
+  color: #515359;
+  font-weight: 800;
+}
+
 footer{
-  position: absolute;
   text-align: center;
-  bottom: 0;
-  width:100%;
+  
 }
