@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fredoka+One&family=Inter&family=Roboto&family=Volkhov&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fira+Code&family=Fredoka+One&family=Inter&family=Roboto&family=Volkhov&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -25,11 +24,11 @@ body{
 }
 
 h1,li{
-   font-family: 'Inter', sans-serif;
+   font-family: 'Roboto', sans-serif;
 }
 
 p{
-  font-family: "Roboto";
+  font-family: "fira code";
   font-size: 1.3rem;
   line-height: 170%;
 }
@@ -86,6 +85,7 @@ nav{
 
 .flex-heading{
   font-size: 3rem;
+  margin-bottom: 100px;
 }
 
 .flex-p{
@@ -106,12 +106,37 @@ nav{
 
 .skill-list{
   line-height: 30px;
-  margin-left: 5%;
+  margin-left: 15%;
   margin-top:  10px;
   font-size: 1.3rem;
   font-family: "Roboto";
   color: #515359;
   font-weight: 800;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 150px;
+  width: fit-content;
+  row-gap: 50px;
+}
+
+.grid-image{
+  display: grid;
+  grid-template-columns: 60px;
+  justify-content: center;
+  width: 220px;
+  border: 5px black solid;
+
+}
+
+.grid-image p{
+  text-align: center;
+}
+
+.grid-image-child{
+  height: 50px;
 }
 
 footer{
@@ -120,3 +145,4 @@ footer{
   text-align: center;
   padding : 5% 0;
 }
+
