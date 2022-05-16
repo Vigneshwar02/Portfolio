@@ -12,25 +12,38 @@
 a:visited{
   color: inherit;
 }
+
 :root{
   --background: #fcfcfc;
   --foreground: #11999E;
   --heading: #30E3CA;
   --font:#40514E;
+  --ff-primary: 'Source sans pro', sans-serif;
+  --ff-secondary:"Source code pro", monospace;
+  --p-fs: 1.3rem;
+  --nav-fs: 1.6rem;
+  --flex-fs: 3rem;
+  --skill-fs: 1.3rem;
 }
+
+button{
+  display: none;
+}
+
+
 body{
  background-color: var(--background);
 
 }
 
 h1,li{
-   font-family: 'Roboto', sans-serif;
+   font-family: var(--ff-primary);
 }
 
 p{
-  font-family: "fira code";
-  font-size: 1.3rem;
-  line-height: 170%;
+  font-family: var(--ff-secondary);
+  font-size: var(--p-fs);
+  line-height: 1.6;
 }
 
 
@@ -45,10 +58,10 @@ nav{
   justify-content: space-between;
   align-items: center;
   min-height: 75px;
+  padding: 1em;
   max-height: fit-content;
   background-color: black;
   color: var(--heading);
-  font-size: 1.5rem;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -57,13 +70,17 @@ nav{
 .nav-item{
   flex-direction: row;
   padding: 0 15px 0 15px;
-  font-size: 1.6rem;
-  margin: 0 4%;
+  font-size: var(--nav-fs);
+  
 }
 
 .nav-item li{
   display: inline;
   margin: 0 15px 0 15px;
+}
+
+.drop-menu{
+  visibility: visible;
 }
 
 .flex-container{
@@ -84,7 +101,7 @@ nav{
 }
 
 .flex-heading{
-  font-size: 3rem;
+ 
   margin-bottom: 100px;
 }
 
@@ -104,12 +121,25 @@ nav{
   padding: 100px 0;
 }
 
+.intro-font{
+  padding-bottom: 0;
+  margin-top: 100px;
+}
+
+.intro{
+  font-weight: 400;
+  font-size:var(--flex-fs);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
 .skill-list{
-  line-height: 30px;
+
   margin-left: 15%;
   margin-top:  10px;
-  font-size: 1.3rem;
-  font-family: "Roboto";
+  font-size: var(--skill-fs);
+  font-family: var(--ff-primary);
   color: #515359;
   font-weight: 800;
 }
@@ -146,3 +176,60 @@ footer{
   padding : 5% 0;
 }
 
+@media screen and (max-width:900px){
+
+  :root{
+
+  }
+
+
+  .nav-container{
+    justify-content: none;
+  }
+
+  
+.grid-container{
+  
+  grid-template-columns: auto  auto;
+  column-gap: 100px;
+  row-gap: 50px;
+}
+}
+
+@media screen and (max-width:400px) {
+
+:root{
+
+  --p-fs: 1rem;
+  --nav-fs: 1.3rem;
+  --flex-fs: 2rem;
+  --skill-fs: 1rem;
+}
+
+  .nav-container{
+  flex-direction: column;
+  position: absolute;
+}
+
+
+
+.nav-item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav-item ul{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 5px;
+}
+  
+.grid-container{
+  
+  grid-template-columns: auto  ;
+  
+  row-gap: 50px;
+}
+}
