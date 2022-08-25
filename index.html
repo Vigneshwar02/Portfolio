@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -14,25 +15,25 @@
     <header>
          <div class="nav-container">
              <div class="nav-item">
-                 <h1>My portfolio</h1>
+                 <h1>My Portfolio</h1>
              </div>
 
-              <div class="nav-item">
-                 <button class="button">
-                     <span></span>
-                 </button>
-              </div>
+             
         <nav>
            
                 <div class="nav-item">
-                    <ul>
-                        <li>Home</li>
-                        <li><a href="">Projects</a></li>
-                        <li>Contact Me</li>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contactme.html">Contact me</a></li>
                     </ul>
                 </div>
                 
-            </div> 
+                  <div class="nav-item hamburger">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                  </div>
         </nav>
     </header>
 
@@ -48,20 +49,8 @@
         <section class="odd-item">
         
             <div class="flex-item">
-                <h1 class="flex-heading">About me</h1>
+                <h1 class="sections section-first flex-heading">About me</h1>
                 <p class="flex-p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Purus sit amet luctus venenatis lectus magna fringilla urna. Amet est
-                    placerat in egestas erat imperdiet sed. Scelerisque eleifend donec pretium vulputate sapien nec
-                    sagittis aliquam malesuada. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris.
-                    Habitant morbi tristique senectus et netus et malesuada fames. A arcu cursus vitae congue mauris
-                    rhoncus aenean vel elit. Ridiculus mus mauris vitae ultricies leo integer malesuada. Nisl
-                    condimentum id venenatis a condimentum vitae sapien pellentesque. Diam in arcu cursus euismod.
-                    Mauris ultrices eros in cursus turpis massa. Enim blandit volutpat maecenas volutpat blandit aliquam
-                    etiam. Nec nam aliquam sem et. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Consectetur
-                    a erat nam at lectus urna duis convallis.
-                </p>
-                <p class="flex-p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore
                     et dolore magna aliqua. Purus sit amet luctus venenatis lectus magna fringilla urna. Amet est
                     placerat in egestas erat imperdiet sed. Scelerisque eleifend donec pretium vulputate sapien nec
                     sagittis aliquam malesuada. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris.
@@ -77,7 +66,7 @@
     
     <section class="even-item">
             <div class="flex-item ">
-                <h1 class="flex-heading">Skills</h1>
+                <h1 class="sections section-second flex-heading">Skills</h1>
                 <ul class="skill-list">
                     <div class="grid-container">
                         <div class="grid-image">
@@ -137,7 +126,7 @@
 
 <footer>
     <p>Link to my Github</p>
-    <a href=""><img src="./PNG/GitHub-Mark-Light-64px.png"></a>
+    <a href="https://github.com/PrismLight02" target="_blank"><img src="./PNG/GitHub-Mark-Light-64px.png"></a>
 </footer>
 
 </body>

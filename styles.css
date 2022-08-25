@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fira+Code&family=Fredoka+One&family=Inter&family=Roboto&family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 *{
   padding: 0;
   margin: 0;
@@ -18,7 +20,7 @@ a:visited{
   --foreground: #11999E;
   --heading: #30E3CA;
   --font:#40514E;
-  --ff-primary: 'Source sans pro', sans-serif;
+  --ff-primary: 'Inter', sans-serif;
   --ff-secondary:"Source code pro", monospace;
   --p-fs: 1.3rem;
   --nav-fs: 1.6rem;
@@ -30,18 +32,15 @@ button{
   display: none;
 }
 
-
 body{
  background-color: var(--background);
 
 }
 
-h1,li{
-   font-family: var(--ff-primary);
-}
+
 
 p{
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   font-size: var(--p-fs);
   line-height: 1.6;
 }
@@ -52,9 +51,22 @@ nav{
 }
 
 
+.sections{
+  font-size: 3rem;
+}
+
+.section-first{
+  text-decoration: underline solid white;
+}
+
+.section-second{
+  text-decoration: underline solid black;
+}
+
+
+
 .nav-container{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   min-height: 75px;
@@ -67,6 +79,18 @@ nav{
   z-index: 1000;
 }
 
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin:5px;
+  background-color: white;
+}
 .nav-item{
   flex-direction: row;
   padding: 0 15px 0 15px;
@@ -86,7 +110,7 @@ nav{
 .flex-container{
     
     
-  
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -98,6 +122,8 @@ nav{
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 80px;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .flex-heading{
@@ -136,12 +162,14 @@ nav{
 
 .skill-list{
 
-  margin-left: 15%;
+  display: grid;
   margin-top:  10px;
   font-size: var(--skill-fs);
   font-family: var(--ff-primary);
   color: #515359;
   font-weight: 800;
+  justify-content: center;
+  
 }
 
 .grid-container{
@@ -169,6 +197,13 @@ nav{
   height: 50px;
 }
 
+.email-link{
+  color: inherit;
+  border: 2px solid black;
+  margin-top: 5%;
+  padding:1rem;
+}
+
 footer{
   background-color: black;
   color: white;
@@ -176,12 +211,11 @@ footer{
   padding : 5% 0;
 }
 
+.deployment-links{
+  text-align: center;
+}
+
 @media screen and (max-width:900px){
-
-  :root{
-
-  }
-
 
   .nav-container{
     justify-content: none;
@@ -192,6 +226,40 @@ footer{
   
   grid-template-columns: auto  auto;
   column-gap: 100px;
+  row-gap: 50px;
+}
+}
+
+@media(max-width:810px){
+  .hamburger{
+    display: block;
+  }
+
+  .nav-menu{
+    position: fixed;
+    display: flex;
+    left:-100%;
+    top: 90px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .nav-menu li{
+    margin:10px
+  }
+
+  .active{
+    left:0;
+  }
+}
+
+@media screen and (max-width:690px) {
+  .grid-container{
+  
+  grid-template-columns: auto  ;
+  
   row-gap: 50px;
 }
 }
