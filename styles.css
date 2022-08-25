@@ -248,10 +248,10 @@ footer{
   }
 
   .nav-menu{
-    position: fixed;
+    position: absolute;
     display: flex;
     left:-100%;
-    top: 90px;
+    top: 100%;
     background-color: black;
     width: 100%;
     text-align: center;
