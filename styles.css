@@ -34,9 +34,15 @@ button{
 
 body{
  background-color: var(--background);
+ display: flex;
+ flex-direction: column;
+  min-height: 100vh;
 
 }
 
+footer{
+  flex: 1;
+}
 
 
 p{
@@ -195,6 +201,10 @@ nav{
 
 .grid-image-child{
   height: 50px;
+}
+
+.contact-p{
+  margin-bottom: 50px;
 }
 
 .email-link{
