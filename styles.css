@@ -18,15 +18,16 @@ a:visited{
 }
 
 :root{
-  --background: #fcfcfc;
+  /* --background: #fcfcfc; */
+  --background:#F9F5EB;
   --foreground: #11999E;
   --heading: #30E3CA;
   --font:#40514E;
   --ff-primary: 'Inter', sans-serif;
   --ff-secondary:"Source code pro", monospace;
-  --p-fs: 1.3rem;
-  --nav-fs: 1.6rem;
-  --flex-fs: 3rem;
+  --p-fs: 1.1rem;
+  --nav-fs: 1.4rem;
+  --flex-fs: 2.3rem;
   --skill-fs: 1.3rem;
 }
 
@@ -42,8 +43,9 @@ body{
 
 }
 
-footer{
-  flex: 1;
+footer p{
+  
+  font-size: var(--nav-fs);
 }
 
 
@@ -60,15 +62,11 @@ nav{
 
 
 .sections{
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-.section-first{
-  text-decoration: underline solid white;
-}
-
-.section-second{
-  text-decoration: underline solid black;
+.sections h2{
+  font-size: 1.3rem;
 }
 
 
@@ -80,9 +78,10 @@ nav{
   min-height: 75px;
   padding: 1em;
   max-height: fit-content;
-  background-color: black;
-  color: var(--heading);
-  position: fixed;
+  /* background-color: black; */
+  background-color: white;
+  /* color: var(--heading); */
+  color: #1C3879;
   width: 100%;
   z-index: 1000;
 }
@@ -97,7 +96,7 @@ nav{
   width: 25px;
   height: 3px;
   margin:5px;
-  background-color: white;
+  background-color: #1C3879;
 }
 .nav-item{
   flex-direction: row;
@@ -136,7 +135,7 @@ nav{
 
 .flex-heading{
  
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .flex-p{
@@ -144,16 +143,35 @@ nav{
 }
 
 .odd-item{
-  background-color: black;
+  /* background-color: black; */
+  background-color: #607EAA;
   color: white;
   padding: 100px 0;
 
 }
 
 .even-item{
-  background-color: white;
+  background-color: #F9F5EB;
   padding: 100px 0;
 }
+
+.even-item p{
+  color: #607EAA;
+}
+
+.even-item h1, .even-item h2, .even-item a{
+  color: #2B4865;
+}
+
+.odd-item p{
+  color: #F7ECDE;
+}
+
+.odd-item h1, .odd-item h2, .odd-item a{
+  color: #E9DAC1;
+}
+
+
 
 .intro-font{
   padding-bottom: 0;
@@ -217,15 +235,19 @@ nav{
 }
 
 footer{
-  background-color: black;
+  background-color: #607EAA;
   color: white;
   text-align: center;
   padding : 5% 0;
+  flex: 1;
+  
 }
 
 .deployment-links{
   text-align: center;
 }
+
+
 
 @media screen and (max-width:900px){
 
@@ -252,7 +274,7 @@ footer{
     display: flex;
     left:-100%;
     top: 100%;
-    background-color: black;
+    /* background-color: #1C3879; */
     width: 100%;
     text-align: center;
     flex-direction: column;
@@ -291,6 +313,10 @@ footer{
   position: absolute;
 }
 
+.flex-container{
+  position: relative;
+  top:150px;
+}
 
 
 .nav-item{
