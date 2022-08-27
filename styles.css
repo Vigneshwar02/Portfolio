@@ -275,6 +275,8 @@ footer{
     left:-100%;
     top: 100%;
     /* background-color: #1C3879; */
+    background-color: #607EAA;
+    color: #F9F5EB;
     width: 100%;
     text-align: center;
     flex-direction: column;
@@ -313,10 +315,6 @@ footer{
   position: absolute;
 }
 
-.flex-container{
-  position: relative;
-  top:150px;
-}
 
 
 .nav-item{
